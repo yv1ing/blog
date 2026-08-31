@@ -1,0 +1,8 @@
+html {
+    zoom: 90%;
+}
+
+/* Compensate PaperMod's 100vh page shell for the root-level zoom. */
+.main {
+    min-height: calc(111.111vh - var(--header-height) - var(--footer-height));
+}

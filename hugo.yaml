@@ -1,0 +1,80 @@
+baseurl: "https://blog.yvling.cn/"
+theme: "PaperMod"
+title: "喻灵的博客"
+languagecode: "zh"
+defaultContentLanguage: "zh"
+copyright: "Copyright © 2026 [yv1ing](https://github.com/yv1ing) [桂ICP备2024040959号-1](https://beian.miit.gov.cn/)"
+buildFuture: true
+
+pagination:
+  pagerSize: 5
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+
+# 网站设置
+params:
+  assets:
+    favicon: "favicon.ico"
+  author: "yv1ing"
+  dateFormat: "2006.01.02 03:04:05"
+  tocOpen: true
+  showToc: true
+  showReadingTime: true
+  showPostNavLinks: true
+  showCodeCopyButtons: true
+
+  profileMode:
+    enabled: true
+    title: "以身入局，胜天半子"
+    subtitle: "站在不甘平凡的高度，放眼世界，无所不能"
+    buttons:
+      - name: "文章"
+        url: "posts"
+      - name: "关于"
+        url: "about"
+      - name: "搜索"
+        url: "search"
+
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/yv1ing/"
+    - name: "email"
+      url: "mailto://me@yvling.cn"
+    - name: "rss"
+      url: "/rss.xml"
+
+  # 搜索设置
+  fuseOpts:
+    isCaseSensitive: false
+    includeMatches: true
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    keys: ["title", "content"]
+
+# 菜单栏设置
+menu:
+  main:
+    - identifier: posts
+      name: 文章
+      url: /posts/
+      weight: 1
+    - identifier: about
+      name: 关于
+      url: /about/
+      weight: 2
+    - name: 友链
+      url: /friends/
+      weight: 3
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 4
+    - name: 搜索
+      url: search/
+      weight: 5

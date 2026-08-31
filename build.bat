@@ -1,0 +1,1 @@
+.\hugo-cli\hugo-windows-amd64.exe
